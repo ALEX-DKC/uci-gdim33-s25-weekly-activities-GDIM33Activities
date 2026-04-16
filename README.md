@@ -12,7 +12,15 @@
 [Activity 2: break-down](https://docs.google.com/drawings/d/1NqhMj7zMddQUyuUmfBft3l2naNNAFNeYzsN6Gl916Xo/edit?usp=sharing)
 
 
-## W2
-Write your W2 Devlog here.
+## W3
+1，[Break-down](https://docs.google.com/drawings/d/1NqhMj7zMddQUyuUmfBft3l2naNNAFNeYzsN6Gl916Xo/edit?usp=sharing)
 
-Continue adding additional headers below this one for future weeks and future activities.
+2，
+
+  1, It is because the same event name can be reused in different Graphs. If you want to change name, it only need to change it in one place. 
+  
+  2, Debug.Log() helped me check if one of the event in the graph was being triggered correctly in the whole system.
+  
+  3, Yes, My game has both normal movement and UI interface such as mission failing page, or pause page or inventory page, so locking and unlocking the cursor can help control when the player moves and when they use UI or inventory.
+  
+  4, Yes, in my game, the guards would have at least two states: a patrol state and an alert state. In the patrol state, the guard moves around in the area. In the alert state, the guard chases the player or attacks and shoots at the player.
