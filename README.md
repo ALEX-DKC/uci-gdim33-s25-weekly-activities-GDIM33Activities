@@ -13,9 +13,9 @@
 
 
 ## W3
-1，[Break-down](https://docs.google.com/drawings/d/1NqhMj7zMddQUyuUmfBft3l2naNNAFNeYzsN6Gl916Xo/edit?usp=sharing)
+Activity 1，[Break-down](https://docs.google.com/drawings/d/1NqhMj7zMddQUyuUmfBft3l2naNNAFNeYzsN6Gl916Xo/edit?usp=sharing)
 
-2，
+Activity 2，
 
   1, It is because the same event name can be reused in different Graphs. If you want to change name, it only need to change it in one place. 
   
