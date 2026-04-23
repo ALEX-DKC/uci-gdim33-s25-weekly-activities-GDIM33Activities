@@ -28,7 +28,7 @@ Activity 2，
 ## W4
 Activity 1
 
-I complete the move function of the charator, use WASD and mouse to control the charactor.
+I complete the move function of the player, use WASD and mouse to control the charactor.
 
 Goal：testing if a movement of player feels smooth 
 
