@@ -24,3 +24,25 @@ Activity 2，
   3, Yes, My game has both normal movement and UI interface such as mission failing page, or pause page or inventory page, so locking and unlocking the cursor can help control when the player moves and when they use UI or inventory.
   
   4, Yes, in my game, the guards would have at least two states: a patrol state and an alert state. In the patrol state, the guard moves around in the area. In the alert state, the guard chases the player or attacks and shoots at the player.
+
+## W4
+Activity 1
+
+I complete the move function of the player, use WASD and mouse to control the charactor.
+
+Goal：testing if a movement of player feels smooth 
+
+  1. the animation is not finished, and sometimes the character still appears to move even when no keys are being pressed （Yan Zhang）
+     
+  2. the movement speed feels too slow, so I need to adjust it to make the controls feel better. （JingyiBi）
+     
+  3. when the player stops pressing WASD, the character snaps back to a default direction. （Tina Meng，Xichan Zheng）
+
+
+Acticity2,
+
+1，Yes, a writer could add more dialogue without writing code. After the system is set up, they can just create more dialogue node, write lines and add reply options in the Inspector. The code and graph already handle the logic.
+
+2, The writer can create as many dialogue layers. The limit is the UI, because the screen can only fit about 4 reply options.
+
+3, The Regenerate Nodes button updates the Visual Scripting node library so Unity can recognize new C# code, methods, and events as nodes.
