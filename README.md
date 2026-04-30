@@ -48,28 +48,44 @@ Acticity2,
 3, The Regenerate Nodes button updates the Visual Scripting node library so Unity can recognize new C# code, methods, and events as nodes.
 
 ## W5
+
 activity1:
 
-Step 1: Build the basic weapon switching system
-  1,Create two player states in the Visual Scripting State Machine: Unarmed and PistolEquipped.
-  Add the pistol GameObject to the player and connect it to the state system.
-  In the Unarmed state, keep the pistol hidden.
-  In the PistolEquipped state, make the pistol visible.
-  Add transitions between Unarmed and PistolEquipped using the Tab input.
-Step 2: Add aiming behavior inside the pistol-equipped state
-  Use the right mouse button input to detect when the player is aiming.
-  Connect the aiming input to the Animator through the parameter.isAiming
-  While aiming, lock the player’s movement input but keep camera movement active.
-  When the right mouse button is released, return the player to the normal pistol-equipped pose.
-  Make sure the player can still switch back to the Unarmed state with Tab.
-Step 3: Polish the draw-gun flow and animation logic
-  Clean up the transitions so the switch between unarmed, equipped, and aiming feels smooth.
-  Adjust the pistol position so it looks correct in the player’s hand.
-  Make sure the player must equip the gun first before aiming.
-  Figure out whether I need a separate short “draw gun” animation between Unarmed and PistolEquipped, or if switching directly is enough. Ask in class or office hours if needed.
-  Finalize the full gameplay loop: unarmed → equip pistol → aim → lower weapon → unequip pistol.
+Step 1: Build the basic weapon switching state system
 
- activity 2
+  Create two player states in the Visual Scripting State Machine: Unarmed and PistolEquipped.
   
+  In the Unarmed state, keep the pistol hidden.
+  
+  In the PistolEquipped state, make the pistol visible.
+  
+  Add transitions between Unarmed and PistolEquipped using the Tab input.
+  
+Step 2: Add aiming behavior inside the pistol-equipped state
+
+  Use the right mouse button input to detect when the player is aiming.
+  
+  Connect the aiming input to the Animator through the isAiming
+  
+  Using IF -> While aiming, lock the player’s movement input but keep camera movement active.
+  
+  When the right mouse button is released, means False, player back to the normal pistol-equipped pose.
+  
+Step 3: the draw-gun animation 
+
+  set up varaible in the paramaters
+
+  Find pistol idle, pistol draw, and poistol drop animation
+  
+  Adjust the pistol position so it looks correct in the player’s hand.
+  
+  connect the animation loop: idle - equip pistol - pistol idle - unequip pistol - idle
+
+  set the condition of the transition of the animation
+
+
+activity 2
+  
+For Activity 2, I had already set up some variables in my C# script before class. During class, I first created matching variables in the Animator, and then I mainly worked on building the logic in Visual Scripting based on those variables, especially using a state machine to control the two main states: unarmed and pistol-equipped.This part went fairly smoothly, but later I had trouble connecting the Animator. Player cannot transform to idle state. Finally, I find out it is because one variable could not be trigger, and then I found that I was missing a line related to a bool in the script. In the end, I fixed that, and the animation works smoothly.
 
   
