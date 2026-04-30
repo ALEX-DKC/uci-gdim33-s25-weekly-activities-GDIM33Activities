@@ -46,3 +46,30 @@ Acticity2,
 2, The writer can create as many dialogue layers. The limit is the UI, because the screen can only fit about 4 reply options.
 
 3, The Regenerate Nodes button updates the Visual Scripting node library so Unity can recognize new C# code, methods, and events as nodes.
+
+## W5
+activity1:
+
+Step 1: Build the basic weapon switching system
+  1,Create two player states in the Visual Scripting State Machine: Unarmed and PistolEquipped.
+  Add the pistol GameObject to the player and connect it to the state system.
+  In the Unarmed state, keep the pistol hidden.
+  In the PistolEquipped state, make the pistol visible.
+  Add transitions between Unarmed and PistolEquipped using the Tab input.
+Step 2: Add aiming behavior inside the pistol-equipped state
+  Use the right mouse button input to detect when the player is aiming.
+  Connect the aiming input to the Animator through the parameter.isAiming
+  While aiming, lock the player’s movement input but keep camera movement active.
+  When the right mouse button is released, return the player to the normal pistol-equipped pose.
+  Make sure the player can still switch back to the Unarmed state with Tab.
+Step 3: Polish the draw-gun flow and animation logic
+  Clean up the transitions so the switch between unarmed, equipped, and aiming feels smooth.
+  Adjust the pistol position so it looks correct in the player’s hand.
+  Make sure the player must equip the gun first before aiming.
+  Figure out whether I need a separate short “draw gun” animation between Unarmed and PistolEquipped, or if switching directly is enough. Ask in class or office hours if needed.
+  Finalize the full gameplay loop: unarmed → equip pistol → aim → lower weapon → unequip pistol.
+
+ activity 2
+  
+
+  
